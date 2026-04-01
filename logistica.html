@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística - XV Años Shelyn Guadalupe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%); color: #333; padding: 2rem; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #d946ef 0%, #f472b6 100%); color: white; padding: 3rem 2rem; text-align: center; }
+        .header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .header p { font-size: 1.1rem; opacity: 0.9; }
+        .nav-links { display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap; }
+        .nav-links a { display: inline-block; background: rgba(255,255,255,0.2); color: white; padding: 10px 25px; border-radius: 25px; text-decoration: none; transition: all 0.3s; font-weight: 600; }
+        .nav-links a:hover { background: rgba(255,255,255,0.3); transform: translateY(-2px); }
+        .content { padding: 3rem 2rem; }
+        .section { margin-bottom: 3rem; }
+        .section-title { font-size: 1.8rem; color: #d946ef; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #d946ef; display: flex; align-items: center; gap: 10px; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .info-card { background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%); padding: 2rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .info-card h3 { color: #d946ef; margin-bottom: 1rem; font-size: 1.3rem; }
+        .info-card p { margin-bottom: 0.5rem; line-height: 1.6; }
+        .info-card strong { color: #d946ef; }
+        .timeline { position: relative; padding-left: 2rem; }
+        .timeline:before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, #d946ef 0%, #f472b6 100%); }
+        .timeline-item { position: relative; margin-bottom: 2rem; padding-left: 2rem; }
+        .timeline-item:before { content: ""; position: absolute; left: -2.6rem; top: 0; width: 20px; height: 20px; border-radius: 50%; background: white; border: 3px solid #d946ef; }
+        .timeline-item.completed:before { background: #10b981; border-color: #10b981; }
+        .timeline-date { font-weight: 600; color: #d946ef; margin-bottom: 0.5rem; }
+        .status-badge { display: inline-block; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-left: 0.5rem; }
+        .status-completed { background: #d1fae5; color: #065f46; }
+        .status-pending { background: #fef3c7; color: #92400e; }
+        .status-urgent { background: #fee2e2; color: #991b1b; }
+        .checklist { list-style: none; }
+        .checklist li { padding: 0.75rem; margin-bottom: 0.5rem; background: #f8f9fa; border-left: 4px solid #d946ef; border-radius: 5px; display: flex; align-items: center; gap: 10px; }
+        .checklist li:before { content: "☐"; font-size: 1.5rem; color: #d946ef; }
+        .checklist li.done:before { content: "✓"; color: #10b981; }
+        .contact-box { background: linear-gradient(135deg, #d946ef 0%, #f472b6 100%); color: white; padding: 2rem; border-radius: 15px; text-align: center; }
+        .contact-box a { color: white; text-decoration: underline; }
+        .highlight-box { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem 1.5rem; border-radius: 8px; margin: 1rem 0; }
+        @media (max-width: 768px) { .info-grid { grid-template-columns: 1fr; } .header h1 { font-size: 2rem; } }
+    </style>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Logística del Evento</h1>
+            <p>XV Años Shelyn Guadalupe</p>
+            <p>Sábado 25 de Abril, 2026</p>
+            <div class="nav-links">
+                <a href="index.html">Invitación</a>
+                <a href="contrato.html">Contrato</a>
+                <a href="logistica.html">Logística</a>
+                <a href="selector.html">Selector</a>
+                <a href="invitados.html">Invitados</a>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <!-- Información General -->
+            <section class="section">
+                <h2 class="section-title">📋 Información General</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>👑 Quinceañera</h3>
+                        <p><strong>Nombre:</strong> Shelyn Guadalupe</p>
+                        <p><strong>Fecha del evento:</strong> Sábado 25 de abril de 2026</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📞 Contacto</h3>
+                        <p><strong>Contratante:</strong> Conny Cuevas</p>
+                        <p><strong>Tel/WhatsApp:</strong> 477 564 0349</p>
+                        <p><strong>Email:</strong> cuevasconny7@gmail.com</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>⛪ Ceremonia</h3>
+                        <p><strong>Lugar:</strong> Por confirmar</p>
+                        <p><strong>Hora:</strong> Por confirmar</p>
+                        <p style="margin-top:0.5rem; color:#ef4444;">⚠️ Pendiente confirmar iglesia y hora</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🎉 Recepción</h3>
+                        <p><strong>Lugar:</strong> Por confirmar</p>
+                        <p><strong>Hora:</strong> Por confirmar</p>
+                        <p style="margin-top:0.5rem; color:#ef4444;">⚠️ Pendiente confirmar salón</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Horario del día del evento -->
+            <section class="section">
+                <h2 class="section-title">🕐 Horario del Día del Evento</h2>
+                <div class="highlight-box">
+                    ⚡ <strong>Inicio de filmación:</strong> En la casa de la quinceañera antes de salir al templo
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <p class="timeline-date">Antes del evento <span class="status-badge status-urgent">📍 Casa quinceañera</span></p>
+                        <p><strong>Inicio de filmación en casa</strong> — preparativos, vestido, familia</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="timeline-date">3:45 PM <span class="status-badge status-pending">🚗 Traslado</span></p>
+                        <p>Sale de casa hacia el templo</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="timeline-date">Por confirmar <span class="status-badge status-pending">⛪ Ceremonia</span></p>
+                        <p>Misa — lugar por confirmar</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="timeline-date">Por confirmar <span class="status-badge status-pending">🎉 Recepción</span></p>
+                        <p>Fiesta — salón por confirmar</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timeline del proyecto -->
+            <section class="section">
+                <h2 class="section-title">📅 Cronología del Proyecto</h2>
+                <div class="timeline">
+                    <div class="timeline-item completed">
+                        <p class="timeline-date">2025 <span class="status-badge status-completed">✅ Completado</span></p>
+                        <p>Firma de contrato y apartado inicial ($1,000)</p>
+                    </div>
+                    <div class="timeline-item completed">
+                        <p class="timeline-date">23 de Marzo, 2026 <span class="status-badge status-completed">✅ Completado</span></p>
+                        <p>Segundo pago $700 — Transferencia BBVA</p>
+                    </div>
+                    <div class="timeline-item completed">
+                        <p class="timeline-date">31 de Marzo, 2026 <span class="status-badge status-completed">✅ Realizada</span></p>
+                        <p>Sesión fotográfica previa</p>
+                        <p style="font-size:0.9em; color:#666; margin-top:0.5rem;">La Calzada + Templo del Expiatorio · 4:00 PM</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="timeline-date">17 de Abril, 2026 <span class="status-badge status-urgent">⚠️ Importante</span></p>
+                        <p>Fecha límite de liquidación — Saldo $6,800</p>
+                        <p style="font-size:0.9em; color:#666; margin-top:0.5rem;">8 días antes del evento</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="timeline-date">25 de Abril, 2026 <span class="status-badge status-pending">⏳ Pendiente</span></p>
+                        <p><strong>DÍA DEL EVENTO</strong></p>
+                        <p>Inicio en casa quinceañera · 3:45 PM salida al templo</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Checklist -->
+            <section class="section">
+                <h2 class="section-title">✅ Checklist Foro 7</h2>
+
+                <h3 style="color:#d946ef; margin: 1.5rem 0 1rem;">Pendiente confirmar con cliente</h3>
+                <ul class="checklist">
+                    <li>Apellido completo de la quinceañera</li>
+                    <li>Dirección de la casa (para llegar antes de las 3:45 PM)</li>
+                    <li>Iglesia / templo — nombre y dirección exacta</li>
+                    <li>Hora exacta de la misa</li>
+                    <li>Salón de recepción — nombre y dirección</li>
+                    <li>Hora de inicio de la recepción</li>
+                    <li>Nombre de los padres y padrinos</li>
+                </ul>
+
+                <h3 style="color:#d946ef; margin: 1.5rem 0 1rem;">Día del Evento</h3>
+                <ul class="checklist">
+                    <li>Llegar a casa de quinceañera antes de preparativos</li>
+                    <li>Filmar preparativos en casa (vestido, maquillaje, familia)</li>
+                    <li>Salir con familia a las 3:45 PM hacia el templo</li>
+                    <li>Verificar equipo completo (cámaras, lentes, audio)</li>
+                    <li>Cargar todas las baterías</li>
+                    <li>Llevar tarjetas de memoria formateadas</li>
+                    <li>Confirmar recepción del saldo pendiente ($6,800)</li>
+                </ul>
+
+                <h3 style="color:#d946ef; margin: 1.5rem 0 1rem;">Post-Evento</h3>
+                <ul class="checklist">
+                    <li>Respaldo inmediato del material</li>
+                    <li>Editar fotografías</li>
+                    <li>Editar video (musicalizar y titular)</li>
+                    <li>Crear videoclip para proyección</li>
+                    <li>Cliente selecciona fotos para fotolibro</li>
+                    <li>Entregar material completo</li>
+                </ul>
+            </section>
+
+            <!-- Entregables -->
+            <section class="section">
+                <h2 class="section-title">📦 Paquete Fotolibro — Entregables</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>🖼️ Físicos</h3>
+                        <ul style="list-style:none; padding:0;">
+                            <li style="margin-bottom:0.5rem;">📖 1 fotolibro de 100 fotos</li>
+                            <li style="margin-bottom:0.5rem;">🖼️ 1 ampliación 60x80 cm con marco</li>
+                            <li style="margin-bottom:0.5rem;">💿 1 USB con video editado 4K</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>💻 Digitales</h3>
+                        <ul style="list-style:none; padding:0;">
+                            <li style="margin-bottom:0.5rem;">🎬 Videoclip para proyección</li>
+                            <li style="margin-bottom:0.5rem;">📸 Todas las fotos en alta resolución</li>
+                            <li style="margin-bottom:0.5rem;">🎥 Video completo editado y musicalizado</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contacto -->
+            <section class="section">
+                <div class="contact-box">
+                    <h3>📞 Contacto</h3>
+                    <p style="margin-bottom:1rem;">
+                        <strong>Conny Cuevas</strong><br>
+                        WhatsApp: <a href="https://wa.me/524775640349">477 564 0349</a><br>
+                        Email: cuevasconny7@gmail.com
+                    </p>
+                    <hr style="border:1px solid rgba(255,255,255,0.3); margin:1.5rem 0;">
+                    <p>
+                        <strong>Producciones Foro 7</strong><br>
+                        WhatsApp: <a href="https://wa.me/5214779203776">477-920-3776</a><br>
+                        Padilla 112, Cumbres de Arbide, León, Gto.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <script src="visitas.js?v=1"></script>
+    <script src="js/foro7-footer.js"></script>
+</body>
+</html>
